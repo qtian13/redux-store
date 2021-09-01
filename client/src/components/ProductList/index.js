@@ -11,7 +11,7 @@ import spinner from '../../assets/spinner.gif';
 function ProductList() {
   // const [state, dispatch] = useStoreContext();
   const dispatch = useDispatch();
-  const state = useSelector();
+  const state = useSelector(state => state);
 
   const { currentCategory } = state;
 
